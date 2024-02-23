@@ -98,7 +98,7 @@ class dp_maintenance_mode {
     {
         register_setting('dpmm', 'dpmm-enabled');
         register_setting('dpmm', 'dpmm-content');
-        register_setting('dpmm', 'dpmm_code_snippet');
+        register_setting('dpmm', 'dpmm-code-snippet');
         register_setting('dpmm', 'dpmm-site-title');
         register_setting('dpmm', 'dpmm-roles');
         register_setting('dpmm', 'dpmm-mode');
@@ -300,7 +300,7 @@ class dp_maintenance_mode {
     public function get_snippet() 
     {
         // Get custom code snippets
-        $code = get_option('dpmm_code_snippet');
+        $code = get_option('dpmm-code-snippet');
 
         return $code;
     }

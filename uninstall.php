@@ -26,13 +26,14 @@ function dpmm_remove_capabilities()
 */
 function dpmm_delete_plugin()
 {
-    delete_option('dpmm-content-default');
-    delete_option('dpmm-content');
     delete_option('dpmm-enabled');
+    delete_option('dpmm-content');
+    delete_option('dpmm-code-snippet');
     delete_option('dpmm-site-title');
     delete_option('dpmm-roles');
     delete_option('dpmm-mode');
-    delete_option('dpmm_code_snippet');
+    delete_option('dpmm-image-id');
+    delete_option('dpmm-social-profiles');
 
     // remove capabilities
     dpmm_remove_capabilities();

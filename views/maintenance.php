@@ -62,7 +62,7 @@
         <!-- Footer -->
         <footer>
             <?php $socials = get_option('dpmm-social-profiles'); ?>
-            <?php if(!count($socials) === 0): ?>
+            <?php if(count($socials) > 0): ?>
             <ul>
             <?php 
                 foreach($socials as $name => $option):

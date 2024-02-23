@@ -1,0 +1,23 @@
+// dp-maintenance-mode admin styles
+// Import variables
+@import "variables";
+
+img#dpmm-preview-image {
+    height: auto;
+    max-width: 125px;
+    width: 100%;
+}
+
+.dp-social-profile,
+.dp-social-profile-selector-wrapper {
+    display: flex;
+
+    label {
+        min-width: 125px;
+    }
+}
+
+.inline-warning {
+    color: $red;
+    font-style: bold;
+}

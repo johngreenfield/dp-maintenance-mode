@@ -1,0 +1,263 @@
+// dp-maintenance-mode frontend styles
+// Compile to /assets/css/
+
+// Import variables
+@import "variables";
+
+
+* {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+	font: normal 16px sans-serif;
+	color: $text-color;
+}
+
+ul, 
+nav {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	opacity: 0.8;
+
+    &.btn {
+        color: $white;
+        border-radius: 4px;
+        text-transform: uppercase;
+        background-color: $green;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+hr {
+	width: 150px;
+	height: 2px;
+	background-color: $blue;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 125px 100px;
+
+    h3.title {
+        color: $dark-grey;
+        text-transform: capitalize; 
+        font: bold 2rem 'Open Sans', sans-serif;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    p {
+        max-width: 800px;
+        text-align: center;
+        margin-bottom: 35px;
+        padding: 0 20px;
+        line-height: 2;
+    }
+}
+
+@media (max-width: $lg) {
+	section {
+		padding: 100px 50px;
+	}
+
+}
+
+@media (max-width: $sm) {
+	section {
+		padding: 80px 30px;
+	}
+}
+
+ul.grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $white;
+	padding: 35px 100px 0;
+
+    nav {
+        display: flex;
+
+        li {
+            margin: 0 15px;
+
+            &:first-child {
+                margin-left: 0;	
+            }
+
+            &:last-child {
+                margin-right: 0;	
+            }
+        }
+    
+        img#site-logo {
+            max-width: 250px;
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    h2 {
+        font-family: 'Quicksand', sans-serif;
+    }
+}
+
+@media (max-width: $lg) {
+	header {
+		padding: 20px 50px;
+	}
+}
+
+@media (max-width: $md) {
+	header {
+		flex-direction: column;
+
+        h2 {
+            margin-bottom: 15px;
+        }
+	}
+}
+
+.hero {
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: $black;
+	text-align: center;
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-color: $blue;
+        z-index: -1;
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $dark-grey;
+            opacity: 0.75;
+        }
+    }
+
+    h1 {
+        font: bold 60px 'Open Sans', sans-serif;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font: normal 28px 'Open Sans', sans-serif;
+        margin-bottom: 40px;
+    }
+
+    a.btn {
+        padding: 20px 46px;
+    }
+}
+
+@media (max-width: $lg) {
+	.hero {
+		min-height: 600px;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        a.btn {
+            padding: 15px 40px;
+        }
+	}
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: $white;
+	background-color: $dark-grey;
+	padding: 60px 0;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 25px;
+        font-size: 2rem;
+
+        li {
+            margin: 0 8px;
+
+            &:first-child{
+                margin-left: 0;	
+            }
+
+            &:last-child{
+                margin-right: 0;	
+            }
+        }
+    }
+
+    p {
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        color: rgba(255,255,255,0.6);
+        margin-bottom: 10px;
+    
+        &.attribution {
+            font-size: 0.75rem;
+        }
+
+        a {
+            color: $white;
+        }
+    }
+}
+
+@media (max-width: $md) {
+	footer {
+		padding: 80px 15px;
+	}
+
+}

@@ -1,0 +1,21 @@
+img#dpmm-preview-image {
+  height: auto;
+  max-width: 125px;
+  width: 100%;
+}
+
+.dp-social-profile,
+.dp-social-profile-selector-wrapper {
+  display: flex;
+}
+.dp-social-profile label,
+.dp-social-profile-selector-wrapper label {
+  min-width: 125px;
+}
+
+.inline-warning {
+  color: #C97064;
+  font-style: bold;
+}
+
+/*# sourceMappingURL=admin.css.map */

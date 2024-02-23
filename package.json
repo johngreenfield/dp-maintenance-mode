@@ -1,0 +1,11 @@
+{
+  "name": "maintenance-mode",
+  "version": "1.0.0",
+  "description": "Simple Maintenance Mode plugin",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}
